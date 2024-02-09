@@ -1,3 +1,96 @@
+/*Estrutura do site*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #3F3F3F;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+.contents{
+    width: 1400px;
+    margin: auto;
+    padding: 20px 0px;
+    text-align: center;
+    color: white;
+}
+
+#secao1{
+    background-color: #3264FF;
+    height: 670px;
+}
+
+#secao2{
+    background-color: #00B4E8;
+    height: 805px;
+}
+
+#secao3 {
+
+}
+
+#secao4{
+    background-color: #3264FF;
+}
+a:link, a:active, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #00B4E8;
+}
+
+header{
+    background-color: black;
+    padding: 30px;
+}
+
+#cabecalho {
+    width: 1400px;
+    margin: auto;
+}
+
+.barra {
+    background-color: #3264FF;
+    width: 10px;
+    height: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 20px;
+    float: right;
+}
+
+nav ul li {
+    float: left;
+
+}
+
+nav ul li a:link {
+    display: block;
+    margin-right: 25px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    border-bottom: 1px solid #3264FF;
+}
+
+/*Logo*/
+
+#logo img {
+    border: 1px solid red;
+    float: left;
+    display: block;
+}
+
 img {
     width: 100px;
 }
