@@ -30,6 +30,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 /*Configuração link*/
@@ -54,6 +58,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 #servico {
@@ -136,7 +141,6 @@ input[type="text"], input[type="email"], input[type="tel"]{
 /*inicio conteúdos*/
 
 .contents {
-    border: 1px solid red;
     font-size: 30px;
 }
 
@@ -162,7 +166,6 @@ input[type="text"], input[type="email"], input[type="tel"]{
 }
 
 .item {
-    border: 1px solid red;
     width: 300px;
     text-align: center;
 }
