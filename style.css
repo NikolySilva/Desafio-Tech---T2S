@@ -1,3 +1,13 @@
+/*Definindo variáveis CSS para cores*/
+:root {
+    --cor-primaria: #3F3F3F;
+    --cor-secundária: #3264FF;
+    --cor-terciaria: #00b6e8da;
+    --cor-quartenaria: #E59F24;
+    --cor-quinaria: #FFFFFF;
+    --cor-sextanaria: #000000;
+}
+
 /*Estrutura do site*/
 
 * {
@@ -6,91 +16,244 @@
 }
 
 body{
-    background-color: #3F3F3F;
     font-family: sans-serif;
     font-size: 1em;
     font-weight: bold;
 }
-.contents{
-    width: 1400px;
-    margin: auto;
-    padding: 20px 0px;
+
+/*Header*/
+
+header {
+    background-color: var(--cor-sextanaria);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Configuração link*/
+
+nav, ul, li, a {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+    padding: 0px 10px;
+}
+
+a:hover{
+    color: var(--cor-terciaria);
+    text-decoration: underline;
+}
+
+/* Inicio - t2s serviço*/
+#secao1 {
+    background-color: var(--cor-primaria);
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#servico {
+    width: 600px;
+    margin-left: 50px;
+}
+
+#servico h1 {
+    font-size: 200px;
+    font-family: 'Trocchi';
+    color: var(--cor-quinaria);
+    font-weight: normal;
+    text-shadow: -10px 0px var(--cor-sextanaria)
+}
+
+#servico h4 {
+    font-size: 40px;
+    font-family: 'Bakbak one' sans-serif;
+    color: var(--cor-terciaria);
+    text-align: left;
+}
+
+#servico p {
+    font-size: 30px;
+    width: 550px;
+    color: var(--cor-quinaria);
+}
+
+/* Inicio Form*/
+
+form {
+    width: 400px;
+    margin-right: 50px;
+}
+
+form h3, h4 {
+    font-size: 20px;
     text-align: center;
     color: white;
 }
 
-#secao1{
-    background-color: #3264FF;
-    height: 670px;
+form h4, label {
+    font-weight: normal;
+    color: var(--cor-quinaria);
 }
 
-#secao2{
-    background-color: #00B4E8;
-    height: 805px;
+form h4 {
+    margin-top: 5px;
 }
 
-#secao3 {
-
+label {
+    font-size: 20px;
 }
 
-#secao4{
-    background-color: #3264FF;
-}
-a:link, a:active, a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover{
-    color: #00B4E8;
-}
-
-header{
-    background-color: black;
-    padding: 30px;
+input[type="submit"]{
+    width: 290px;
+    height: 50px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-quinaria);
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
 }
 
-#cabecalho {
-    width: 1400px;
-    margin: auto;
-}
-
-.barra {
-    background-color: #3264FF;
-    width: 10px;
-    height: 10px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 20px;
-    float: right;
-}
-
-nav ul li {
-    float: left;
-
-}
-
-nav ul li a:link {
-    display: block;
-    margin-right: 25px;
-    padding-bottom: 3px;
-    text-transform: uppercase;
-}
-
-nav ul li a:hover{
-    border-bottom: 1px solid #3264FF;
-}
-
-/*Logo*/
-
-#logo img {
+#butao {
     border: 1px solid red;
-    float: left;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
 }
+
+input[type="text"], input[type="email"], input[type="tel"]{
+    width: 400px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+/*Final Form*/
+/* Final - t2s serviço*/
+
+/*inicio conteúdos*/
+
+.contents {
+    border: 1px solid red;
+    font-size: 30px;
+}
+
+.contents h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+/*Inicio secao 2*/
+
+#secao2 {
+    background-color: var(--cor-secundária);
+    color: var(--cor-quinaria);
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.item {
+    border: 1px solid red;
+    width: 300px;
+    text-align: center;
+}
+#secao2 h2{
+    text-shadow: -4px 0px var(--cor-sextanaria);
+}
+
+/*Fim secao 2*/
+
+/*Inicio seção 3*/
+#secao3 {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-quinaria);
+    padding: 50px;
+}
+
+#secao3 h2 {
+    text-shadow: -4px 0px var(--cor-secundária);
+}
+
+.button{
+    width: 280px;
+    height: 70px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor-quartenaria);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transform: rotate(-5deg);
+    box-shadow: 3px 3px var(--cor-sextanaria)
+}
+/*Fim seção 3*/
+
+/*Inicio secão 4*/
+#secao4 {
+    background-color: var(--cor-primaria);
+    color: var(--cor-quinaria);
+    padding: 50px;
+}
+
+#secao4 h2 {
+    text-shadow: -4px 0px var(--cor-sextanaria);
+}
+
+.imgMaior {
+    width: 400px;
+    border-radius: 50%;
+    display: flex;
+    margin: 30px;
+}
+
+.textos {
+    text-align:center;
+    width: 900px;
+}
+
+/*Fim secão 4*/
+
+/*Inicio seção 5*/
+#secao5 {
+    background-color: var(--cor-secundária);
+    color: var(--cor-quinaria);
+    padding: 50px;
+}
+
+#secao5 h2 {
+    text-shadow: -4px 0px var(--cor-sextanaria);
+}
+
+div .container p {
+    text-align: center;
+}
+
+
+/*Fim seção 5*/
+
+/*fim conteúdos*/
 
 img {
     width: 100px;
 }
+
+.imgMenor {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+}
+

@@ -1,148 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta>
-        <title></title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
 
-        
-        <!--Cabeçalho-->
-        <header>
-            <div id="cabecalho">
-                <div id="logo">
-                    <a href=""><img src="Imagens/t2s_LOGO.png"></a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="">Benefícios</a></li>
-                        <li><a href="">A importância do UX/UI design</a></li>
-                        <li><a href="">O que é?</a></li>
-                        <li><a href="">Por que a T2S?</a></li>
-                    </ul>
-                </nav>
+<head>
+    <meta>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!--Cabeçalho-->
+    <header>
+        <div id="logo">
+            <a href=""><img src="Imagens/t2s_LOGO.png"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Benefícios</a></li>
+                <li><a href="">A importância do UX/UI design</a></li>
+                <li><a href="">O que é?</a></li>
+                <li><a href="">Por que a T2S?</a></li>
+            </ul>
+    </header>
+
+    <main>
+
+        <section id="secao1">
+            <div id="servico">
+                <h1>UX/UI Design</h1>
+                <h4>T2S Services</h4>
+                <p>Tenha interfaces de usuários atraentes e intuitivas que vão cativar seus clientes!</p>
             </div>
-        </header>
+            <div>
+                <form>
+                    <h3>Contrate nosso serviço de UX/UI design</h3>
+                    <h4>Preencha os dados abaixo:</h4>
 
-        <main>
 
-            <section>
-                <div>
-                    <h1>UX/UI Design</h1>
-                    <h4>T2S Services</h4>
-                    <p>Tenha interfaces de usuários atraentes e intuitivas que vão cativar seus clientes</p>
+                    <label id="name" class="labels">Nome:</label><br>
+                    <input type="text" name="nome" id="name" placeholder="Nome Completo"><br><br>
 
-                    <aside>
-                        <form>
-                            <h3>Contrate nosso serviço de UX/UI design</h3>
-                            <h4>Preencha os dados abaixo:</h4>
+                    <label id="e-mailbox" class="labels">E-mail:</label><br>
+                    <input type="email" name="e-mail" id="e-mailbox" placeholder="exemplo@empresa.com"><br><br>
 
-                            <label id="name">Nome:</label><br>
-                            <input type="text" name="nome" id="name" placeholder="Nome Completo"><br>
+                    <label id="company" class="labels">Empresa:</label><br>
+                    <input type="text" name="empresa" id="company" placeholder="Nome da Empresa"><br><br>
 
-                            <label id="e-mailbox">E-mail:</label><br>
-                            <input type="email" name="e-mail" id="e-mailbox" placeholder="exemplo@empresa.com"><br>
+                    <label id="charge" class="labels">Cargo:</label><br>
+                    <input type="text" name="cargo" id="charge" placeholder="Cargo em que trabalha"><br><br>
 
-                            <label id="company">Empresa:</label><br>
-                            <input type="text" name="empresa" id="company"><br>
+                    <label id="phone" class="labels">Telefone:</label><br>
+                    <input type="tel" name="tel" id="phone" placeholder="(xx) xxxxx-xxxx"><br><br>
 
-                            <label id="charge">Cargo:</label><br>
-                            <input type="text" name="cargo" id="charge"><br>
+                    <div id="butao">
+                        <input type="submit" value="CADASTRE-SE!">
+                    </div>
+                </form>
+            </div>
+        </section>
 
-                            <label id="phone">Telefone:</label><br>
-                            <input type="tel" name="tel" id="phone" placeholder="(xx) xxxxx-xxxx"><br>
+        <section id="secao2" class="contents">
+                <h2>Conheça os benefícios desse serviço</h2>
 
-                            <input type="submit" value="CADASTRE-SE!">
-                        </form>
-                    </aside>                       
-                </div> 
-            </section>
-
-            <section id="secao1">
-                <div class="contents">
-                    <h2>Conheça os benefícios desse serviço</h2>
-                    <hr>
-                    <div>
-                        <img src="Imagens/produtosQualidade.jpg">
+                <div class="container">
+                    <div class="item">
+                        <img src="Imagens/produtosQualidade.jpg" class="imgMenor">
                         <p>Produtos de melhor qualidade</p>
                     </div>
 
-                    <div>
-                        <img src="Imagens/valorizacaoMarca/20943999.jpg">
+                    <div class="item">
+                        <img src="Imagens/valorizacaoMarca/20943999.jpg" class="imgMenor">
                         <p>Valorização da marca</p>
                     </div>
 
-                    <div>
-                        <img src="Imagens/conversõesClientesLucro/20943645.jpg">
+                    <div class="item">
+                        <img src="Imagens//conversõesClientesLucro/20943645.jpg" class="imgMenor">
                         <p>Aumento das conversões dos clientes e lucro</p>
                     </div>
                 </div>
-            </section>
+        </section>
 
-            <section id="secao2">
-                <div class="contents">
-                    <h2>A importância de contratar nosso serviço de UX/UI design</h2>
-                    <hr>
+        <section class="contents" id="secao3">
+            <h2>A importância de contratar nosso serviço de UX/UI design</h2>
 
-                    <div class="barra"></div>
-                    <p>Este serviço é fundamental para o sucesso de um produto digital, pois além de causar uma boa primeira impressão, ele entregará conforto e recepitividade aos usuários. Logo, as chances desse usuários se tornar um cliente fiel são mais altas</p>
-                    <div class="barra"></div>
-                    <button>CADASTR-SE AGORA!</button>
+            <div class="container">
+                <p>Este serviço é fundamental para o sucesso de um produto digital, pois além de causar uma boa primeira
+                    impressão, ele entregará conforto e recepitividade aos usuários. Logo, as chances desse usuários se
+                    tornar um cliente fiel são mais altas</p>
+            </div>
+            <div id="butao">
+                <button class="button">CADASTRE-SE AGORA!</button>
+            </div>
+        </section>
+
+        <section class="contents" id="secao4">
+                <h2>Mas afinal, o que é UX/UI design?</h2>
+                <div  class="container">
+                    <div>
+                        <img src="Imagens/UI.jpg" class="imgMaior">
+                    </div>
+                    <div class="textos">
+                        <p>O objetivo do UI design é criar uma interface atraente e fácil de usar que permita que os
+                            usuários interajam de forma <strong>Eficiente</strong> e <strong>Eficaz</strong> com o
+                            produto.
+                        </p>
+                    </div>
                 </div>
-            </section>
 
-            <section id="secao3">
-                <div class="contents">
-                    <h2>Mas afinal, o que é UX/UI design?</h2>
-                    <hr>
-
-                    <div>
-                        <img src="Imagens/UI.jpg"> 
-                        <p>O objetivo do UI design é criar uma interface atraente e fácil de usar que permita que os usuários interajam de forma <strong>Eficiente</strong> e <strong>Eficaz</strong> com o produto.</p>
+                <div class="container">
+                    <div class="textos">
+                        <p>Já o UX design crie experiências de usuários satisfatórias e significativas em produtos digitais,
+                            garantindo assim que esse produto atenda às necessidades dos usuários de forma
+                            <strong>Eficiente</strong>,<strong>Eficaz</strong> e <strong>Agradável</strong>.
+                        </p>
                     </div>
-
-                    <div> 
-                        <p>Já o UX  design crie experiências de usuários satisfatórias e significativas em produtos digitais, garantindo assim que esse produto atenda às necessidades dos usuários de forma <strong>Eficiente</strong>,<strong>Eficaz</strong> e <strong>Agradável</strong>.</p>
-                        <img src="Imagens/UX.jpg">
+                    <div>
+                        <img src="Imagens/UX.jpg" class="imgMaior">
                     </div>
                 </div>
-            </section>
+        </section>
 
-            <section id="secao4">
-                <div class="contents">
-                    <h2>Por que contratar este serviço com a T2S?</h2>
-                    <hr>
-                    <p>A T2S tem sido um pilar de desenvolvimento de sistemas sob demanda desde 2003. Nossos resultados falam por sí só:</p>
+        <section class="contents" id="secao5">
+            <div>
+                <h2>Por que contratar este serviço com a T2S?</h2>
 
-                    <div>
-                        <img>
-                        <p><strong>+400 projetos realizados</strong></p>
+                <div class="container">
+                    <p>A T2S tem sido um pilar de desenvolvimento de sistemas sob demanda desde 2003. Nossos resultados falam por sí só:
+                    </p>
+                </div>
+
+                <div class="container">
+                    <div class="item">
+                        <img src="Imagens/projetosRealizados/20943863.jpg" class="imgMenor">
+                        <p>+400 projetos realizados</p>
                     </div>
 
-                    <div>
-                        <img>
-                        <p><strong>+500.000 horas de programação</strong></p>
+                    <div class="item">
+                        <img src="Imagens/programacaoHoras/20943632.jpg" class="imgMenor">
+                        <p>+500.000 horas de programação</p>
                     </div>
 
-                    <div>
-                        <img>
+                    <div class="item">
+                        <img src="Imagens/projetosEntregues/20943639.jpg" class="imgMenor">
                         <p><strong>100% dos projetos entregues</strong></p>
                     </div>
+                </div>
 
-                    <div>
-                        <img>
+                <div class="container">
+                    <div class="item">
+                        <img src="Imagens/empresas/1749.jpg" class="imgMenor">
                         <p><strong>+140 empresas atendidas</strong></p>
                     </div>
 
-                    <div>
-                        <img>
-                        <p><strong>Presente em 14 estados do Brasil e Argentina</strong></p>
+                    <div class="item">
+                        <img src="Imagens/mapaAML/34070.jpg" class="imgMenor">
+                        <p>Presente em 14 estados do Brasil e Argentina</p>
                     </div>
-
-                    <button>TENHO INTERESSE</button>
                 </div>
-            </section>
-        </main>
-    </body>
+                <div id="butao">
+                    <button class="button">TENHO INTERESSE</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>
